@@ -17,6 +17,7 @@ Bugfixes:
  * Control Flow Graph: Perform proper virtual lookup for modifiers for uninitialized variable and unreachable code analysis.
  * Immutables: Fix wrong error when the constructor of a base contract uses ``return`` and the parent contract contains immutable variables.
  * IR Generator: Fix IR syntax error when copying storage arrays of structs containing functions.
+ * IR Generator: Fix IR syntax error when copying reference types in calldata and storage to struct members in memory.
  * Natspec: Fix ICE when overriding a struct getter with a Natspec-documented return value and the name in the struct is different.
  * TypeChecker: Fix ICE when a constant variable declaration forward references a struct.
 
