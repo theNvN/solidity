@@ -1485,7 +1485,7 @@ Json::Value StandardCompiler::compileYul(InputsAndSettings _inputsAndSettings)
 						*o.bytecode,
 						o.sourceMappings.get(),
 						Json::arrayValue,
-						false,
+						objectKind == "deployedBytecode",
 						[&](string const& _element) { return isArtifactRequested(
 							_inputsAndSettings.outputSelection,
 							sourceName,
