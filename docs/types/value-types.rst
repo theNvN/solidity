@@ -187,8 +187,8 @@ The address type comes in two flavours, which are largely identical:
 - ``address``: Holds a 20 byte value (size of an Ethereum address).
 - ``address payable``: Same as ``address``, but with the additional members ``transfer`` and ``send``.
 
-The idea behind this distinction is that ``address payable`` is an address you can send Ether to,
-while a plain ``address`` cannot be sent Ether.
+The idea behind this distinction was that ``address payable`` is an address you can send Ether to,
+while a plain ``address`` cannot be sent Ether. However, ``call`` member can be used to send Ether to a plain ``address`` too.
 
 Type conversions:
 
